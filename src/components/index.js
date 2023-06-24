@@ -6,7 +6,6 @@ import Library from "./Library";
 import Getappointment from "./Getappointment";
 import Blogpost from "./Blogpost";
 import Footer from "./Footer";
-import Search from "./Search";
 
 
 export{
@@ -18,5 +17,4 @@ export{
     Getappointment,
     Blogpost, 
     Footer, 
-    Search
 };

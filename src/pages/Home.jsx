@@ -1,10 +1,9 @@
 import React from "react";
-import { Navbar, Search, Hero, Departments, About, Library, Getappointment, Blogpost, Footer} from "../components";
+import { Navbar, Hero, Departments, About, Library, Getappointment, Blogpost, Footer} from "../components";
 
 const Home = ()=>(
     <div>
       <Navbar />
-      <Search />
       <Hero />
       <Departments />
       <About />

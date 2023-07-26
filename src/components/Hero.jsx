@@ -1,4 +1,5 @@
 import { herobg, hero } from "../assets";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Hero = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
                                 <br />
                                 your <strong> better </strong> life. <br />
                             </h3>
-                            <a href="#" className="btn">join as patient</a>
+                            <Link to="/login"><a href="#" className="btn">join as patient</a></Link>
                             <br /> <br />
                             <h6 class="small">
                                 You can get the care you need 24/7 – be it online or in

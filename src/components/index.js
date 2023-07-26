@@ -16,5 +16,5 @@ export{
     Library,
     Getappointment,
     Blogpost, 
-    Footer, 
+    Footer
 };

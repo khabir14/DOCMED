@@ -1,4 +1,4 @@
-import { healthCare } from "../assets";
+import {docnurse, healthCare } from "../assets";
 
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
             <div className="row">
 
                 <div className="image" >
-                    <img className="about-image" src={healthCare} style={{ height: "50rem" }} alt="" />
+                    <img className="about-image" src={docnurse} style={{ height: "50rem", borderRadius: '5rem'}} alt="" />
                 </div>
 
                 <div className="content">

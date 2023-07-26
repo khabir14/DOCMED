@@ -29,6 +29,9 @@ import covid from "./covid-19.png"
 import laboratories from "./laboratories.png"
 import nicotine from "./nicotine.png"
 import treatment from "./treatment.png"
+import docnurse from "./doc-nurse.jpg"
+import login from "./login.jpg"
+import login2 from "./login2.jpg"
 
 
 export{
@@ -62,7 +65,10 @@ export{
     covid,
     laboratories,
     nicotine, 
-    treatment
+    treatment,
+    docnurse,
+    login,
+    login2
     
 
 

@@ -49,7 +49,7 @@ const SignupPage = () => {
                 </div>
 
                 <div className="form">
-                <Link to="/"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
+                <Link to="/DOCMED"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
                     <br /><br /><br />
                     <h3 className="sub-heading">Create a new account</h3>
                     <p>sign up using social networks</p>
@@ -94,7 +94,7 @@ const SignupPage = () => {
                             <button type="submit" className='btn'>SignUp</button>
                         </form>
                     </div>
-                    <p className='login'>Already have a docmed account ? <a className='signUp'><Link to="/login"> Sign in</Link></a></p>
+                    <p className='login'>Already have a docmed account ? <a className='signUp'><Link to="/DOCMED/login"> Sign in</Link></a></p>
                     {/* <p className=''>Joining as doctor ? <a href="" className='signUp'> Click Here</a></p> */}
                 </div>
 

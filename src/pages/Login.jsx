@@ -49,7 +49,7 @@ const LoginPage = () => {
                 </div>
 
                 <div className="form">
-                <Link to="/"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
+                <Link to="/DOCMED"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
                     <br /><br /><br />
                     <h3 className="sub-heading">Login to your account</h3>
                     <p>log in using social networks</p>
@@ -94,7 +94,7 @@ const LoginPage = () => {
                             <button type="submit" className='btn'>login</button>
                         </form>
                     </div>
-                    <p>New to DOCMED ? <a className='signUp'><Link to="/signup"> Join Now</Link></a></p>
+                    <p>New to DOCMED ? <a className='signUp'><Link to="/DOCMED/signup"> Join Now</Link></a></p>
                 </div>
 
             </div>

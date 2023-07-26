@@ -6,10 +6,10 @@ const App = ()=>(
   <div>
     <Router>
       <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route  path="/home" element={<Home />} />
-        <Route  path="/login" element={<LoginPage />} />
-        <Route  path="/signup" element={<SignupPage />} />
+        <Route index path="/DOCMED" element={<Home />} />
+        
+        <Route  path="/DOCMED/login" element={<LoginPage />} />
+        <Route  path="/DOCMED/signup" element={<SignupPage />} />
 
       </Routes>
 

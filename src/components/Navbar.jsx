@@ -51,7 +51,7 @@ const Nav = () => {
 
   return (
     <header>
-      <Link to="/"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
+      <Link to="/DOCMED"><a class="logo"><i class="fa-solid fa-user-doctor"></i> DOCMED</a></Link>
       <nav className={`${toggle ? "active":"navbar "}`}>
         {/* <ul className="inone">
               {navlinks.map((nav, index) => (
@@ -67,7 +67,7 @@ const Nav = () => {
         <a href="#membership">Membership</a>
         <a href="#help">Help</a>
         <a href="#contact">Contact</a>
-        <a className="sign-in"><Link to="/login"> Sign In</Link></a>
+        <a className="sign-in"><Link to="/DOCMED/login"> Sign In</Link></a>
       </nav>
       <div class="icons">
         <i class={`fas ${toggle ? "fa-times" : "fa-bars"}`} id="menu-bars" onClick={() => setToogle(!toggle)}></i>

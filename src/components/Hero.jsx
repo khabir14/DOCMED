@@ -24,7 +24,7 @@ const Hero = () => {
                                 <br />
                                 your <strong> better </strong> life. <br />
                             </h3>
-                            <Link to="/login"><a href="#" className="btn">join as patient</a></Link>
+                            <Link to="/DOCMED/login"><a className="btn">join as patient</a></Link>
                             <br /> <br />
                             <h6 class="small">
                                 You can get the care you need 24/7 – be it online or in
@@ -33,7 +33,7 @@ const Hero = () => {
 
                             </h6>
                             <br />
-                            <a href="#" className="btn">join as doctor</a>
+                            <Link to="/DOCMED/login"><a className="btn">join as doctor</a></Link>
                         </div>
                         <div class="image">
                             <img src={hero} className="heroimg" alt="" />

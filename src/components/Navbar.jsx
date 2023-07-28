@@ -66,7 +66,7 @@ const Nav = () => {
         <a href="#departments">Departments</a>
         <a href="#membership">Membership</a>
         <a href="#help">Help</a>
-        <a href="#contact">Contact</a>
+        <a href=""><Link to="/DOCMED/contact">Contact</Link></a>
         <a className="sign-in"><Link to="/DOCMED/login"> Sign In</Link></a>
       </nav>
       <div class="icons">

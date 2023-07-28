@@ -396,9 +396,9 @@ span{
 }
 
 .library .box-container .box .image{
-    height: 42rem;
+    height: 25rem;
     width: 100%;
-    padding:1.5rem;
+    padding: 1.5rem;
     overflow: hidden;
     position: relative;
 }

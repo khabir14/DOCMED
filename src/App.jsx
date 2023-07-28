@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {Home, LoginPage, SignupPage} from "./pages";
+import {Home, LoginPage, SignupPage, ContactPage} from "./pages";
 
 const App = ()=>(
   <div>
@@ -10,6 +10,8 @@ const App = ()=>(
         
         <Route  path="/DOCMED/login" element={<LoginPage />} />
         <Route  path="/DOCMED/signup" element={<SignupPage />} />
+        <Route  path="/DOCMED/contact" element={<ContactPage />} />
+
 
       </Routes>
 

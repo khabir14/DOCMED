@@ -23,7 +23,7 @@
 
 html{
     font-size: 62.5%; 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -72,72 +72,77 @@ section:nth-child(even):not(:last-child){
 
 /* Sign up // login form */
 
-.sign-up{
+.contact{
     background-color: rgb(160, 218, 235);
     height: 100vh;
+    width: 100vw;
+    /* overflow-x: hidden; */
 }
-.sign-up .row{
+.contact .row{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    align-items: center;
-    margin: 4rem 0rem;
-    height: 58rem;
+    align-items: flex-start;
+    margin: 0rem 0rem;
+    height: 52rem;
 }
 
-.sign-up .row .image{
+.contact .row .image{
     flex:1 1 45rem;
 }
 
-.sign-up .row .image img{ 
+.contact .row .image img{ 
     height: 57rem;
     width: 45rem;
     border-radius: 3rem;
     padding-left: 1rem;
 }
 
-.sign-up .row .form{
-    flex:1 1 45rem;
-    height: 57rem;
+.contact .row .form{
+    flex: 1 1 45rem;
+    /* background-color: rgb(255, 19, 6); */
+    height: 50rem;
     max-width: 90rem;
     border-radius: 3rem;
     box-shadow: var(--box-shadow);
     border: 0.1rem solid rgba(0,0,0,.2);
 }
-.sign-up .row .form .logo {
+.contact .logo {
     color: var(--black);
     font-size: 3.2rem;
     font-weight: bolder;
-    margin: 19.1rem;
+    margin: 0rem;
+    cursor: pointer;
 }
 
-.sign-up .row .form .logo i{
+.contact .logo i{
     color:var(--colour);
 }
 
 
-.sign-up .row .form h3{
+.contact .row .form h3{
     color:var(--black);
     font-size: 4rem;
+    margin-left: -18vw;
     padding:.5rem 0;
 }
 
-.sign-up .row .form p{
+.contact .row .form p{
     color:var(--light-color);
     font-size: 1.5rem;
     padding:.5rem 0;
     line-height: 2;
     text-align: center
 }
-.sign-up .row .form .or{
+.contact .row .form .or{
     color:var(--light-color);
     font-size: 1.5rem;
     padding:.5rem 0;
     line-height: 2;
     text-align: center
 }
-.sign-up .row .form .or:before,
-.sign-up .row .form .or:after {
+.contact .row .form .or:before,
+.contact .row .form .or:after {
     background-color: #000;
     content: "";
     display: inline-block;
@@ -146,17 +151,17 @@ section:nth-child(even):not(:last-child){
     vertical-align: middle;
     width: 40%;
 }
-.sign-up .row .form .or:before {
+.contact .row .form .or:before {
     right: 0.5em;
     margin-left: -50%;
 }
 
-.sign-up .row .form .or:after {
+.contact .row .form .or:after {
     left: 0.5em;
     margin-right: -50%;
 }
 
-.sign-up .row .form  .icons{
+.contact .row .form  .icons{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +170,7 @@ section:nth-child(even):not(:last-child){
     padding:2.5rem 2.5rem;
 }
 
-.sign-up .row .form .icons i{
+.contact .row .form .icons i{
     font-size: 3rem;
     color:var(--colour);
     width: 7rem;
@@ -174,18 +179,18 @@ section:nth-child(even):not(:last-child){
     padding: 0 2rem;
 }
 
-.sign-up .row .form .input-form{
+.contact .row .form .input-form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.sign-up .row .form .input-form form {
+.contact .row .form .input-form form {
     width: 100%;
     height: 18rem;
 }
-.sign-up .row .form .input-form form input {
-    margin: 1rem 8.5rem;
-    width: 70%;
+.contact .row .form .input-form form input {
+    margin: 1rem 4.5rem;
+    width: 40%;
     background: #eee;
     border-radius: 1rem;
     padding: 1rem;
@@ -193,25 +198,53 @@ section:nth-child(even):not(:last-child){
     color: var(--black);
     text-transform: none;
 }
-
-.sign-up .row .form .input-form form .btn{
-    margin: 0 22.8rem;
+#message{
+    width: 60%;
+    height: 100%;
+    justify-content: flex-start;
+    
+    
+    
+}
+#message::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none; /* To allow clicking through the placeholder */
 }
 
-.sign-up .row .form .signUp {
+
+.contact .row .form .input-form form .btn{
+    margin: 0 4.5rem;
+}
+
+.contact .row .form .signUp {
     color: #3146e9;
     text-decoration: none;
 }
 
-.sign-up .row .form .signUp:hover {
+.contact .row .form .signUp:hover {
     color:var(--black);
     text-decoration: underline;
 }
 .login{
     margin-top: 5rem;
-    /* padding: 5rem 0; */
 }
-
+.content{
+    flex:1 1 16rem;
+}
+.content h3{
+    color: var(--black);
+    font-size: 4rem;
+    padding: 0;
+}
+.content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
 
 
 
@@ -241,41 +274,51 @@ section:nth-child(even):not(:last-child){
 
 /* media queries  */
 @media (max-width:1200px){
-    .sign-up .row {
+    .contact{
+        overflow: hidden;
+    }
+    .contact .row {
         margin: 6rem 0rem;
     }
-    .sign-up .row .form{
+    .contact .row .form{
         max-width: 50rem;
     }
-    .sign-up .row .form .logo {
+    .contact .row .form .logo {
         margin: 0 15rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 7.5rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0 18.8rem;
     }
 
 }
 @media (max-width:1050px){
-    .sign-up .row {
-        margin: -1.5rem 0rem;
+    .contact{
+        overflow: hidden;
     }
-    .sign-up .row .image img {
-        height: 55rem;
-        width: 42rem;
+    .contact .row {
+        margin: 0 0rem;
+        height: 43rem;
     }
-    .sign-up .row .form{
-        max-width: 37.4rem;
+    .contact .row .form{
+        max-width: 50rem;
     }
-    .sign-up .row .form .logo {
+    .contact .row .form h3 {
+        color: var(--black);
+        font-size: 3rem;
+        padding: 0.5rem 0;
+        margin-left: -11vw;
+
+    }
+    .contact .row .form .logo {
         margin: 0 9.5rem;
     }
-    .sign-up .row .form {
-        height: 55rem;
+    .contact .row .form {
+        height: 44rem;
     }
-    .sign-up .row .form .icons {
+    .contact .row .form .icons {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -283,11 +326,17 @@ section:nth-child(even):not(:last-child){
         flex: 1 1 17rem;
         padding: 0.5rem 2.5rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 5.5rem;
+        width: 55%;
     }
-    .sign-up .row .form .input-form form .btn {
-        margin: 0 13.8rem;
+    #message {
+        width: 80%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .contact .row .form .input-form form .btn {
+        margin: 0 5.1rem;
     }
 
 }
@@ -295,34 +344,36 @@ section:nth-child(even):not(:last-child){
 @media (max-width:991px){
 
     html{
-        font-size: 55%;
+        font-size: 65%;
+    }
+    .contact{
+        overflow-x: hidden;
+        /* overflow-y: visible; */
+        /* overflow: visible; */
+        /* margin: 5rem; */
     }
     
-    .sign-up .row {
-        margin: 8vh 10.5vw;
+    .contact .row {
+        margin: 5vh 5.5vw;
         height: 80vh;
     }
-    .sign-up .row .image{
-        display: none;
-    }
-    .sign-up .row .form {
-        height: 70vh;
+    .contact .row .form {
+        height: 44vh;
         max-width: 75vw;
     }
-    .sign-up .row .form .logo {
+    .contact .row .form .logo {
         margin: 0 25.7rem;
     }
-    .sign-up .row .form .input-form form input {
-        margin: 1rem 10.3rem;
+    .contact .row .form .input-form form input {
+        margin: 1rem 5.5rem;
     }
-    .sign-up .row .form .input-form form {
+    .contact .row .form .input-form form {
         width: 100%;
         height: 18rem;
         margin-top: 6rem;
     }
-    .sign-up .row .form .input-form form .btn {
-        margin: 0px 29.5rem;
-        /* position: fixed; */
+    .contact .row .form .input-form form .btn {
+        margin: 0px 5.1rem;
     }
 
 
@@ -332,20 +383,20 @@ section:nth-child(even):not(:last-child){
     html{
         font-size: 55%;
     }
-    .sign-up{
-        overflow-x: hidden;
+    .contact{
         height: 100vh;
+        overflow-y: visible;
     }
-    .sign-up .row {
+    .contact .row {
         margin: 8vh 6.5vw;
         height: 80vh;
         width: 80vw;
     }
-    .sign-up .row .form {
-        height: 74vh;
+    .contact .row .form {
+        height: 57vh;
         max-width: 80vw;
     }
-    .sign-up .row .form .icons i {
+    .contact .row .form .icons i {
         font-size: 4rem;
         color: var(--colour);
         width: 7rem;
@@ -355,18 +406,18 @@ section:nth-child(even):not(:last-child){
         padding: 3rem 2rem;
         overflow: visible;
     }
-    .sign-up .row .form .logo {
+    .contact .row .form .logo {
         margin: 0 25.2rem;
     }
-    .sign-up .row .form .logo i {
+    .contact .row .form .logo i {
         color: var(--colour);
         margin: 0 0.6rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 6.3rem;
-        width: 57rem;
+        width: 45rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0px 27.9rem;
         width: 14rem;
     }
@@ -375,20 +426,20 @@ section:nth-child(even):not(:last-child){
     html{
         font-size: 55%;
     }
-    .sign-up {
-        overflow: hidden;
+    .contact {
+        overflow-x: hidden;
         height: 100vh;
     }
-    .sign-up .row {
+    .contact .row {
         margin: 8vh 6.5vw;
         height: 85vh;
         width: 80vw;
     }
-    .sign-up .row .form {
-        height: 83vh;
+    .contact .row .form {
+        height: 65vh;
         max-width: 80vw;
     }
-    .sign-up .row .form .icons i {
+    .contact .row .form .icons i {
         font-size: 4rem;
         color: var(--colour);
         width: 7rem;
@@ -398,67 +449,77 @@ section:nth-child(even):not(:last-child){
         padding: 3rem 2rem;
         overflow: visible;
     }
-    .sign-up .row .form .logo {
+    .contact .row .form .logo {
         margin: 0 14.7rem;
     }
-    .sign-up .row .form .logo i {
+    .contact .row .form .logo i {
         color: var(--colour);
         margin: 0 0.6rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 3.5rem;
-        width: 42rem;
+        width: 30rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0px 17.5rem;
         width: 14rem;
     }
 }
 @media (max-width:450px){
-    .sign-up .row .form .logo {
+    .contact .row .form {
+        height: 50vh;
+        max-width: 80vw;
+    }
+    .contact .row .form .logo {
         margin: 0 9.7rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 2.5rem;
-        width: 34rem;
+        width: 25rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0px 12.5rem;
         width: 14rem;
         /* position: fixed; */
     }
-    .login{
-        margin-top: 5rem;
-        padding: 5rem 0;
-    }
 
 }
 @media (max-width:380px){
-    .sign-up .row .form .logo {
+    .contact .row .form {
+        height: 60vh;
+        max-width: 80vw;
+    }
+    .contact .row .form .logo {
         margin: 0 8rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 2.5rem;
-        width: 32rem;
+        width: 22rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0px 12.5rem;
         width: 14rem;
     }
-    .login{
-        margin-top: 5rem;
-        padding: 5rem 0;
-    }
 }
 @media (max-width:300px){
-    .sign-up .row .form .logo {
+    .contact .row .form h3 {
+        color: var(--black);
+        font-size: 3rem;
+        padding: 0.5rem 0;
+        margin-left: 2vw;
+    }
+    .contact .row .form {
+        height: 66vh;
+        max-width: 80vw;
+    }
+    .contact .row .form .logo {
         margin: 0 4.3rem;
     }
-    .sign-up .row .form .input-form form input {
+    .contact .row .form .input-form form input {
         margin: 1rem 2.5rem;
         width: 23rem;
     }
-    .sign-up .row .form .input-form form .btn {
+    .contact .row .form .input-form form .btn {
         margin: 0px 7rem;
         width: 14rem;
     }
